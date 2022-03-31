@@ -1,6 +1,8 @@
 SIFROVANI
 
 Generátor podpisů   
-Potřeba je je XAMPP 
+
+Potřeba je XAMPP  
+
 Zatím se jen připojí hash k .txt souboru.
 
