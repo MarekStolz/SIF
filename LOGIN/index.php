@@ -1,3 +1,11 @@
+
+<?php
+if (isset($_POST['submit'])) {
+    include '/connect.php';
+    include '/podpis.php';
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    }
+?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -6,15 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podpis</title>
 </head>
-<header>Podepisování souboru</header>
-<?php
-if (isset($_POST['submit'])) {
-    include '/connect.php';
-    include '/podpis.php';
-    header('Location: ' . $_SERVER['PHP_SELF']);
-    }
-?>
-
+    <header>Podepisování souboru</header>
 
 <form action="/SIF/LOGIN/data.php" method="POST">
         <input type="text" name="jmeno">
