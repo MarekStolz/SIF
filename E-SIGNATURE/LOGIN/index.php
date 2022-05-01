@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 </head>
     <header>Podepisování souboru</header>
 
-<form action="/SIF/LOGIN/data.php" method="POST">
+<form action="/SIF/E-SIGNATURE/LOGIN/data.php" method="POST">
         <input type="text" name="jmeno">
         <br>
         <input type="text" name="prijmeni" >
