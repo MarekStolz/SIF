@@ -1,29 +1,4 @@
 <?php
-  /*
-    $text = "Marek je frajer";
-    $key = "marek";
-//sifrovani
-    $cipher = "AES-128-CTR";  
-    $iv_length = openssl_cipher_iv_length($cipher);
-    $options = 0;
-      
-    $iv = '1234567891011121';
-    
-    $encryption = openssl_encrypt($text, $cipher,
-                $key, $options, $iv);
-      
-    echo "Zašifrováný text: " . $encryption . "<br>";
-
-
-//rozsifrovani
-    $decryption=openssl_decrypt ($encryption, $cipher, 
-            $key, $options, $iv);
-      
-   
-    echo "Rozšifrováný text: " . $decryption;
-      */
-
-//define our character->crypted text
 $cryptArray = array( "a"=>"x",
 "b"=>"h",
 "c"=>"y",
