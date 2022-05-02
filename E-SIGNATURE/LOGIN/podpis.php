@@ -1,12 +1,11 @@
 <?php
 include '/connect.php';
 
-$id = md5(uniqid(rand()));
-
-$key = md5(uniqid(rand()));
+$id = sha1(uniqid(rand()));
+$key = sha1(uniqid(rand()));
 
 $file_content = file_get_contents("data.txt");
-$hashed_file = hash('sha256', $file_content);
+$hashed_file = hash('sha512', $file_content);
 
 $encryptedHash = openssl_encrypt($hashed_file, 'blowfish', $key, $options=0);
 

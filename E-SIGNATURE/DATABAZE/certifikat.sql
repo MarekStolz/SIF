@@ -9,7 +9,7 @@ CREATE Table IF NOT EXISTS osoba(
 
 CREATE TABLE IF NOT EXISTS certifakt (
     idcertificate VARCHAR (100) NOT NULL PRIMARY KEY,
-    md5_key VARCHAR(100) NOT NULL,
+    sha1_key VARCHAR(100) NOT NULL,
     hash_value varchar(100) NOT NULL,
     datum DATE NOT NULL,
     osoba_idosoba INT,

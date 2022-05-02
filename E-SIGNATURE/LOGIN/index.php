@@ -1,11 +1,3 @@
-
-<?php
-if (isset($_POST['submit'])) {
-    include '/connect.php';
-    include '/podpis.php';
-    header('Location: ' . $_SERVER['PHP_SELF']);
-    }
-?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -15,7 +7,13 @@ if (isset($_POST['submit'])) {
     <title>Podpis</title>
 </head>
     <header>Podepisování souboru</header>
-
+    <?php
+if (isset($_POST['submit'])) {
+    include '/connect.php';
+    include '/podpis.php';
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    }
+?>
 <form action="/SIF/E-SIGNATURE/LOGIN/data.php" method="POST">
         <input type="text" name="jmeno">
         <br>
