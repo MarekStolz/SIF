@@ -1,6 +1,6 @@
 <?php 
 
-
+// sifrovani
 function cesar() {
     $clear_text = "";
     if(isset($_POST['encrypt']))    {
@@ -24,7 +24,7 @@ function cesar() {
     }
 
 }
-
+//desifrovani
 function decesar() {
     if(isset($_POST['decrypt']))    {
         $encrypttext = $_REQUEST['encrypted'];
