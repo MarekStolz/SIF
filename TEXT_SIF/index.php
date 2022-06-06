@@ -8,7 +8,7 @@
     <body>
         <form action="index.php" method="post">
             <div class="container">
-                
+
                 <div class="row">
                     <div class="col-lg-6 text-center">
                         <select name="cesar" class="custom-select-sm">
@@ -39,13 +39,13 @@
                             cesar();
                         }?></textarea>
                     </div> 
-                 
+
                     <div class="col-lg-4 text-center">
                         <button class="btn btn-danger" name="decrypt" value="1">Decrypt</button><br>
                     </div>  
               </div>        
            </div>
-            
-          
+
+
     </body>
 </html>
