@@ -1,0 +1,1 @@
+Program který umožňuje připsat do databáze Jméno, zbraň a vybrat studio.
