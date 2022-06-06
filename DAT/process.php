@@ -8,9 +8,9 @@ if(isset($_POST['save']))
 	 $sql = "INSERT INTO charact (name,weapon,studio_id)
 	 VALUES ('$name','$weapon','$studio')";
 	 if (mysqli_query($connect, $sql)) {
-		echo "uspesne pripsano !";
+		echo "Uspěšně přidáno!";
 	 } else {
-		echo "Error: " . $sql . "
+		echo "Chyba: " . $sql . "
 " . mysqli_error($connect);
 	 }
 	 mysqli_close($connect);
